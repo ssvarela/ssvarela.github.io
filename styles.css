@@ -1,0 +1,126 @@
+/* Estilos generales */
+body {
+  background-color: #222222;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: relative;
+  text-align: center;
+}
+
+.header-image {
+  width: 100%;
+  height: 400px; /* Ajusta la altura del encabezado según tus preferencias */
+  background-size: cover;
+  background-position: center;
+  animation: rotateImages 30s ease infinite; /* Agrega la animación de rotación de imágenes */
+}
+
+@keyframes rotateImages {
+  0% { background-image: url('images/background.jpg'); }
+  33% { background-image: url('images/back4.jpg'); }
+  66% { background-image: url('images/back3.jpg'); }
+  100% { background-image: url('images/back2.jpg'); }
+}
+
+.content {
+  padding: 50px;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  vertical-align: top;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+/* Estilos para el menú */
+nav {
+  background-color: #000000; /* Color de fondo del menú */
+  height: 40px; /* Ajusta la altura del menú según tus preferencias */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Arial", sans-serif; /* Cambia el tipo de letra del menú */
+  font-size: 16px; /* Ajusta el tamaño de la tipografía según tus preferencias */
+  font-weight: bold; /* Ajusta el peso de la tipografía según tus preferencias */
+  padding: 0 10px; /* Ajusta el espaciado interno del enlace según tus preferencias */
+  display: flex; /* Agrega flexbox */
+  align-items: center; /* Centra verticalmente el contenido */
+  margin: 10px 0; /* Ajusta el margen superior e inferior para centrar verticalmente */
+}
+
+/* Estilos adicionales para cada página (home.html, cv.html, research.html, outreach.html, links.html) */
+
+
+/* Estilos adicionales para index.html */
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  height: 40vh;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.profile-image {
+  width: 120%; /* Ajustado el tamaño de la imagen de perfil */
+  max-width: 900px;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 20px; /* Ajusta el margen derecho según tus preferencias */
+}
+
+.text-container {
+  width: 80%; /* Ajustado el ancho del contenedor de texto */
+  margin-top: 40px; /* Añadido margen superior */
+  margin-left: 50px; /* Ajusta el margen izquierdo según tus preferencias */
+  text-align: justify; /* Añadido justificado */
+  line-height: 1.5; /* Añadido espacio entre líneas */
+}
+
+/* Media queries para dispositivos móviles */
+
+@media screen and (max-width: 768px) {
+  /* Estilos para dispositivos con un ancho máximo de 768px */
+
+  .header-image {
+    height: 300px; /* Ajusta la altura del encabezado para dispositivos móviles */
+  }
+
+  .profile-image {
+    width: 100%; /* Ajusta el tamaño de la imagen de perfil para dispositivos móviles */
+    margin-right: 0; /* Elimina el margen derecho para dispositivos móviles */
+  }
+
+  .text-container {
+    width: 100%; /* Ajusta el ancho del contenedor de texto para dispositivos móviles */
+    margin-top: 20px; /* Ajusta el margen superior para dispositivos móviles */
+    margin-left: 0; /* Elimina el margen izquierdo para dispositivos móviles */
+  }
+}
