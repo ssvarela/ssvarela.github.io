@@ -14,7 +14,7 @@ header {
 
 .header-image {
   width: 100%;
-  height: 400px; /* Ajusta la altura del encabezado según tus preferencias */
+  height: 300px; /* Ajusta la altura del encabezado según tus preferencias */
   background-size: cover;
   background-position: center;
   animation: rotateImages 30s ease infinite; /* Agrega la animación de rotación de imágenes */
@@ -56,6 +56,7 @@ nav ul {
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  margin-left: -400px; /* Ajusta el valor según tus preferencias */
 }
 
 nav li {
@@ -124,3 +125,68 @@ nav a {
     margin-left: 0; /* Elimina el margen izquierdo para dispositivos móviles */
   }
 }
+
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+}
+
+.symbol {
+  margin-right: 5px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.social-links a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+.email-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.email-link:hover {
+  color: #01A4A4; /* Cambia a tu color cian deseado */
+}
+a:hover {
+  color: #01A4A4;
+}
+Asegúrate de reemplazar las partes relevantes de tu código CSS con estas modificaciones. Con estos cambios, los enlaces a las redes sociales se mostrarán en una columna vertical en el lado derecho del footer, mientras que la información de contacto estará en el lado izquierdo.
+
+
+
+
+
+
+
+Recuerda reemplazar "correo@example.com", "tu_usuario_twitter", "tu_usuario_github" y "tu_identificador_orcid" con tu información correspondiente.
+
+Con estos cambios, agregarás un footer en la parte inferior de tu página index.html con tu dirección de correo electrónico y enlaces a tus perfiles de Twitter, GitHub y ORCID. Los símbolos emoji dentro del footer pueden ser personalizados según tu preferencia.
+
+
+
+
+
+
