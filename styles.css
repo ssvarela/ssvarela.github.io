@@ -56,7 +56,9 @@ nav ul {
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  margin-left: -400px; /* Ajusta el valor según tus preferencias */
+  /*margin-left: -400px;  Ajusta el valor según tus preferencias */
+  display: flex;
+  justify-content: center;
 }
 
 nav li {
@@ -72,7 +74,7 @@ nav a {
   padding: 0 10px; /* Ajusta el espaciado interno del enlace según tus preferencias */
   display: flex; /* Agrega flexbox */
   align-items: center; /* Centra verticalmente el contenido */
-  margin: 10px 0; /* Ajusta el margen superior e inferior para centrar verticalmente */
+  margin: 10px 20px; /* Ajusta el margen superior e inferior para centrar verticalmente */
 }
 
 /* Estilos adicionales para cada página (home.html, cv.html, research.html, outreach.html, links.html) */
